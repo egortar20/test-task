@@ -1,1 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap')
+
+$border-radius: 15px
+
+$color-white: #fff
+$primary-color: #3a3073
+$primary-color-disabled: #b7b1da
+$primary-hover: #443885
+$primary-active: #2c2457
+$text-primary: #414141
+$text-secondary: #939393
+$color-warn: rgb(229, 65,75)
+$color-warn-focus: #fcb7bc
+    
+.form-control
+    line-height: 25px
+    margin: 10px 0 10px 0
+    ontline: none
+    width: 250px
+    border-radius: $border-radius
+    border: 1px solid $text-secondary
+    padding: 5px 10px 5px 10px
+    color: $text-primary
+    font-size: 0.9rem
+    &:active
+        border-color: $primary-active
+    &:focus
+        box-shadow: 0 0 0 3px rgba(90, 52, 157, 0.5)
+        border-color: $primary-color
+    &.invalid
+        border-color: $color-warn
+        &:focus
+            box-shadow: 0 0 0 3px $color-warn-focus
+
+.btn
+    outline: none
+    border: none
+    font-size: 0.9rem
+    display: inline-block
+    padding: 7px 20px
+    color: $color-white
+    background-color: $primary-color
+    box-shadow: 0px 2px 10px #CED6E8   
+    border-radius: $border-radius
+    text-decoration: none
+    border: 1px solid $primary-color
+    transition: 0.2s
+    &:hover
+        background-color: $primary-hover
+        transition: 0.2s
+    &:active
+        background-color: $primary-active
+        transition: 0.2s
+    &:focus
+        box-shadow: 0 0 0 3px rgba(90, 52, 157, 0.5)
+        transition: 0.2s
